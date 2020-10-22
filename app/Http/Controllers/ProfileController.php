@@ -57,7 +57,8 @@ class ProfileController extends Controller
 
         // Load the existing profile
         $user = Auth::user();
-        
+        print($user);
+
         //this is empty and returning null
         $profile = Profile::where('user_id', $user->id)->first();
         if(empty($profile)){

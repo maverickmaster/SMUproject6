@@ -43,13 +43,14 @@ return [
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
 
+        
         'mysql' => [
             'driver' => 'mysql',
             'host' => 'us-cdbr-east-02.cleardb.com',
             'port' => env('DB_PORT', '3306'),
-            'database' => 'heroku_31099f2c3eec5af',
-            'username' => 'b4649e01e4cfab',
-            'password' => '8a9b9da0',
+            'database' => 'heroku_7fb4a35237adc4c',
+            'username' => 'b385ab1d717272',
+            'password' => '765ded80',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -57,9 +58,9 @@ return [
             'prefix_indexes' => true,
             'strict' => true,
             'engine' => null,
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
-            ]) : [],
+            // 'options' => extension_loaded('pdo_mysql') ? array_filter([
+            //     PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            // ]) : [],
         ],
 
         // 'mysql' => [
